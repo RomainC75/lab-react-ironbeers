@@ -1,0 +1,14 @@
+.banner img {
+    width:100%;
+}
+
+.inputLine{
+    display:flex;
+    justify-content:center;
+}
+
+.errorField{
+    color:red;
+    
+}
+

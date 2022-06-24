@@ -1,0 +1,69 @@
+.singleCard{
+    padding:10px;
+}
+
+
+
+.line{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.line h3, .line h4, .line p{
+    display:inline-block;
+}
+
+h3,h4{
+    margin:0;
+}
+
+h3{
+    font-size:30px;
+    font-weight:400;
+}
+
+h4{
+    font-size:23px;
+}
+
+p{
+    margin:0;
+}
+
+h4, .attenuation{
+    color:grey;
+}
+
+.attenuation{
+    font-size:30px;
+}
+
+.tagLine{
+    font-weight:500;
+}
+
+.brewedBy{
+    font-weight:800;
+}
+
+.attenuation{
+    color:grey;
+}
+
+.description{
+    text-align:left;
+    font-weight:600;
+}
+
+.isAdded{
+    color:green;
+}
+
+.isRefused{
+    color:red;
+}
+
+input{
+    border-radius:2em;
+}

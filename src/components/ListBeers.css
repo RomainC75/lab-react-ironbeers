@@ -1,0 +1,23 @@
+.card{
+    display:flex;
+    border-bottom:1px solid rgb(197, 197, 197);
+}
+
+.bannerImg{
+    width:100%;
+}
+
+img{
+    width:40px;
+}
+
+h3{
+    font-size:18px;
+}
+
+.tagLine{
+    color:grey;
+    margin:0;
+}
+
+
