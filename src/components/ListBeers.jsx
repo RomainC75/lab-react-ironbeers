@@ -14,7 +14,7 @@ export default function ListBeers() {
 
   useEffect(() => {
     setIsLoading(true);
-    const url = beerToFind==='' ? 'https://ih-beers-api2.herokuapp.com/beers' :  `https://ih-beers-api2.herokuapp.com/beers/search?q=${beerToFind}`
+    const url = beerToFind==='' ? 'https://ih-beers-api2.herokuapp.com/beers' : `https://ih-beers-api2.herokuapp.com/beers/search?q=${beerToFind}`
     axios
       .get(url)
       .then((res) => {

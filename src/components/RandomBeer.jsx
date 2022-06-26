@@ -6,7 +6,7 @@ import RandomBeerImg from "../assets/random-beer.png";
 import SingleBeerCard from "./SingleBeerCard";
 
 import "./Spinner.css";
-import "./SingleBeer.css";
+// import "./SingleBeer.css";
 
 export default function RandomBeer() {
   const [beer, setBeer] = useState({});

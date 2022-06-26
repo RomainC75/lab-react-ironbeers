@@ -2,7 +2,9 @@
     padding:10px;
 }
 
-
+.beerImg{
+    width:70px !important;
+}
 
 .line{
     display:flex;

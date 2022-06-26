@@ -2,11 +2,11 @@ import React from "react";
 
 import "./SingleBeer.css";
 
-
 export default function SingleBeerCard({beer}) {
+  console.log('single Beer card')
   return (
     <div>
-      <img src={beer.image_url} />
+      <img class="beerImg" src={beer.image_url} />
       <section>
         <div className="line">
           <h3>{beer.name}</h3>
