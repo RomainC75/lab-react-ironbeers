@@ -10,24 +10,31 @@ import "./ListBeers.css";
 export default function ListBeers() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [beerToFind, setBeerToFind] = useState('')
 
   useEffect(() => {
     setIsLoading(true);
+    const url = beerToFind==='' ? 'https://ih-beers-api2.herokuapp.com/beers' :  `https://ih-beers-api2.herokuapp.com/beers/search?q=${beerToFind}`
     axios
-      .get("https://ih-beers-api2.herokuapp.com/beers")
+      .get(url)
       .then((res) => {
         setIsLoading(false);
         setData(res.data);
         console.log(res);
       })
       .catch((e) => {});
-  }, []);
+  }, [beerToFind]);
+
+  
 
   return (
     <>
       <div className="banner">
         <img className="bannerImg" src={beersListBanner} />
         <h1>Beers List !</h1>
+      </div>
+      <div>
+        <input onChange={(event)=>{setBeerToFind(event.target.value)}}/>
       </div>
       {isLoading ? (
         <div className="lds-dual-ring"></div>
